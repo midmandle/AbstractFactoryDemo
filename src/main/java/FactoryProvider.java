@@ -1,7 +1,7 @@
 public class FactoryProvider {
-    public static MazeFactory getFactory(String mazeType) {
+    public static MazeFactory getFactory(MazeType mazeType) {
         switch(mazeType){
-            case "Enchanted":
+            case Enchanted:
                 return new EnchantedMazeFactory();
             default:
                 return new StandardMazeFactory();
